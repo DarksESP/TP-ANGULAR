@@ -27,15 +27,11 @@ Permite a los usuarios explorar un catálogo de juegos, seleccionar cantidades y
 
 | Campo | Detalle |
 |---|---|
-| **Nombre y Apellido** | Tu Nombre Apellido |
-| **DNI** | 12.345.678 |
-| **Email** | tu@email.com |
+| **Nombre y Apellido** | Hernán Luis Valea |
+| **DNI** | 45224524 |
+| **Email** | valea.190455@email.com |
 | **Sede** | Tandil |
 
-## Enlace al proyecto
-
-- 🔗 GitHub: [github.com/tuusuario/gamestore](https://github.com/tuusuario/gamestore)
-- ▶️ StackBlitz: [stackblitz.com/edit/angular-ivy-nn](https://stackblitz.com/edit/angular-ivy-nn)
 
 ## Instalación
 
