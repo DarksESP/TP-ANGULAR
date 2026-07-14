@@ -1,59 +1,66 @@
-# ProyectoAngular1
+the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# 🎮 GameStore - Tienda de Videojuegos
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.5.
+## Descripción
 
-## Development server
+GameStore es una aplicación web desarrollada en Angular que simula una tienda de videojuegos online. 
+Permite a los usuarios explorar un catálogo de juegos, seleccionar cantidades y gestionar un carrito de compras interactivo.
 
-To start a local development server, run:
+## Funcionalidades
+
+- 🎮 Catálogo de videojuegos con cards
+- 🛒 Carrito de compras con dropdown interactivo
+- ➕ Selector de cantidad con validaciones
+- 🏷️ Indicador de stock y productos en clearance
+- 📄 Página de About con información de la tienda
+- 🧭 Navegación con routing entre páginas
+
+## Tecnologías utilizadas
+
+- Angular 17+
+- TypeScript
+- Bootstrap 5
+- SCSS
+- GitHub
+
+## Datos del estudiante
+
+| Campo | Detalle |
+|---|---|
+| **Nombre y Apellido** | Tu Nombre Apellido |
+| **DNI** | 12.345.678 |
+| **Email** | tu@email.com |
+| **Sede** | Tandil |
+
+## Enlace al proyecto
+
+- 🔗 GitHub: [github.com/tuusuario/gamestore](https://github.com/tuusuario/gamestore)
+- ▶️ StackBlitz: [stackblitz.com/edit/angular-ivy-nn](https://stackblitz.com/edit/angular-ivy-nn)
+
+## Instalación
 
 ```bash
+# Clonar el repositorio
+git clone https://github.com/tuusuario/gamestore.git
+
+# Instalar dependencias
+npm install
+
+# Ejecutar el proyecto
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Estructura del proyecto
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
 ```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
+src/
+  app/
+    carrito/          → Componente dropdown carrito
+    games-list/       → Catálogo de juegos
+    input-integer/    → Componente selector de cantidad
+    shop-about/       → Página about
+    shop-cart/        → Página carrito completo
+    footer/           → Componente footer
+    services/
+      game-cart.service.ts  → Servicio del carrito
 ```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
