@@ -1,0 +1,39 @@
+.hero-section {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 20px;
+
+  .lead {
+    color: #e94560;
+    font-size: 1.3rem;
+  }
+}
+
+.info-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: transform 0.2s;
+  height: 100%;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+
+  .icon-wrapper {
+    font-size: 2rem;
+    color: #e94560;
+  }
+}
+
+.feature-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+}

@@ -1,0 +1,48 @@
+
+<div class="catalogo-header text-center">
+  <div class="catalogo-badge">⚡ NUEVOS LANZAMIENTOS DISPONIBLES ⚡</div>
+  <h1 class="catalogo-titulo">
+    <span class="titulo-texto">GAME</span>
+    <span class="titulo-accent">STORE</span>
+  </h1>
+  <p class="catalogo-subtitulo">+ de 500 títulos · Mejores precios · Envío en 24hs</p>
+  <div class="titulo-linea"></div>
+</div>
+
+<div class="row row-cols-1 row-cols-md-6 g-5">
+  @for (game of games; track game.name) {
+    <div class="col">
+      <div class="card h-100" [class.clearance]="game.clearance">
+        <img [src]="game.image" class="card-img-top" [alt]="game.name"/>
+        <div class="card-body">
+          <h5 class="card-title">{{game.name}}</h5>
+          <p class="card-text">
+            <span class="badge text-bg-secondary">{{game.type}}</span>
+          </p>
+          <p class="card-text">
+            <strong>Precio:</strong> ${{game.price}}
+          </p>
+        </div>
+        <div class="card-footer">
+  @if (game.stock == 0) {
+    <span class="badge text-bg-danger">SIN STOCK</span>
+  } @else {
+    <span class="badge text-bg-success">Stock: {{game.stock}}</span>
+    <app-input-integer
+      [(quantity)]="game.quantity"
+      [max]="game.stock"
+      (onMaxExceeded)="mostrarMensaje($event)"
+      (onBelowMin)="mostrarMensaje($event)">
+    </app-input-integer>
+    <span class="text-muted" style="font-size: 0.8rem;">Cant: {{game.quantity}}</span>
+   <button class="btn btn-sm btn-danger w-100 mt-2"
+        (click)="addToCart(game)"
+        [disabled]="game.quantity == 0 || game.quantity > game.stock">
+  🛒 Agregar al carrito
+</button>
+  }
+</div>
+      </div>
+    </div>
+  }
+</div>

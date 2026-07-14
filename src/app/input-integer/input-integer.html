@@ -1,0 +1,16 @@
+<div class="quantity-wrapper">
+  <button class="btn btn-sm btn-outline-danger"
+          (click)="downQuantity()">-</button>
+  <input type="text"
+         [(ngModel)]="quantity"
+         class="quantity-input"
+         (keyup)="onChangeQuantity($event)">
+  <button class="btn btn-sm btn-outline-success"
+          (click)="upQuantity()">+</button>
+</div>
+
+@if (mensaje !== '') {
+  <div class="mensaje-alerta">
+    {{mensaje}}
+  </div>
+}

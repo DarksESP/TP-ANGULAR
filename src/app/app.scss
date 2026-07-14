@@ -1,0 +1,161 @@
+
+//NAV
+
+.gamer-nav {
+  background: linear-gradient(90deg, #0d0d0d, #1a1a2e) !important;
+  border-bottom: 2px solid #e94560;
+  padding: 12px 20px;
+  box-shadow: 0 4px 15px rgba(233, 69, 96, 0.3);
+
+  .gamer-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    span {
+      color: #e94560;
+    }
+
+    &:hover {
+      text-shadow: 0 0 10px rgba(233, 69, 96, 0.8);
+    }
+  }
+
+  .gamer-link {
+    color: #ccc !important;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 8px 16px !important;
+    border-radius: 4px;
+    transition: all 0.3s;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: #e94560;
+      transition: all 0.3s;
+      transform: translateX(-50%);
+    }
+
+    &:hover {
+      color: white !important;
+      background: rgba(233, 69, 96, 0.1);
+
+      &::after {
+        width: 80%;
+      }
+    }
+
+    &.active {
+      color: #e94560 !important;
+    }
+  }
+}
+
+
+
+//footer
+.gamer-footer {
+  background: linear-gradient(90deg, #0d0d0d, #1a1a2e);
+  border-top: 2px solid #e94560;
+  box-shadow: 0 -4px 15px rgba(233, 69, 96, 0.3);
+  margin-top: 60px;
+
+  .footer-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+    span {
+      color: #e94560;
+    }
+  }
+
+  .footer-desc {
+    color: #aaa;
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+
+    .social-link {
+      background: rgba(233, 69, 96, 0.15);
+      border: 1px solid #e94560;
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: all 0.3s;
+
+      &:hover {
+        background: #e94560;
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  .footer-title {
+    color: #e94560;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 10px;
+      color: #aaa;
+      font-size: 0.9rem;
+
+      a {
+        color: #aaa;
+        text-decoration: none;
+        transition: all 0.3s;
+
+        &:hover {
+          color: #e94560;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+
+  .footer-divider {
+    border-color: #2a2a4e;
+    margin: 0;
+  }
+
+  .footer-copy {
+    color: #aaa;
+    font-size: 0.85rem;
+    margin: 0;
+
+    span {
+      color: #e94560;
+      font-weight: bold;
+    }
+  }
+}
+
+///

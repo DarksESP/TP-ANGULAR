@@ -1,0 +1,64 @@
+
+<div class="carrito-container">
+  <!-- Botón del carrito -->
+  <button class="carrito-btn" (click)="toggleCarrito()">
+    🛒
+    @if (cartService.totalItems > 0) {
+      <span class="carrito-badge">{{cartService.totalItems}}</span>
+    }
+    <span class="carrito-total">${{cartService.totalPrice}}</span>
+  </button>
+
+  <!-- Dropdown -->
+  @if (abierto) {
+    <div class="carrito-dropdown">
+
+      <div class="dropdown-header">
+        <span class="dropdown-titulo">Mi Carrito</span>
+        <span class="dropdown-cantidad">{{cartService.totalItems}} productos</span>
+      </div>
+
+      <hr class="dropdown-divider"/>
+
+      @if (cartService.items.length == 0) {
+        <div class="dropdown-vacio">
+          <p>🛒 Tu carrito está vacío</p>
+        </div>
+      }
+
+      <div class="dropdown-items">
+        @for (item of cartService.items; track item.name) {
+          <div class="dropdown-item-row">
+            <img [src]="item.image" [alt]="item.name" class="dropdown-img"/>
+            <div class="dropdown-info">
+              <span class="dropdown-nombre">{{item.name}}</span>
+              <span class="dropdown-cant">x{{item.quantity}}</span>
+            </div>
+            <span class="dropdown-precio">${{item.price * item.quantity}}</span>
+            <button class="btn-remove" (click)="cartService.removeItem(item)">✕</button>
+          </div>
+        }
+      </div>
+
+      @if (cartService.items.length > 0) {
+        <hr class="dropdown-divider"/>
+        <div class="dropdown-footer">
+          <div class="d-flex justify-content-between mb-3">
+            <span class="total-label">TOTAL</span>
+            <span class="total-valor">${{cartService.totalPrice}}</span>
+          </div>
+          <a routerLink="/carrito" class="btn btn-ver w-100 mb-2"
+             (click)="cerrarCarrito()">
+            Cerrar carrito
+          </a>
+          <button class="btn btn-vaciar w-100"
+                  (click)="cartService.clearCart()">
+            Vaciar carrito
+          </button>
+        </div>
+      }
+
+    </div>
+  }
+
+</div>

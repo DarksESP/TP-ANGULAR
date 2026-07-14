@@ -1,0 +1,90 @@
+<div class="about-container">
+
+  <!-- Hero Section -->
+  <div class="hero-section text-center py-5">
+    <h1 class="display-4 fw-bold">{{ shop.nombre }}</h1>
+    <p class="lead">Tu destino definitivo para los mejores videojuegos</p>
+  </div>
+
+    <!-- Sobre nosotros -->
+    <div class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2 class="mb-4">¿Quiénes somos?</h2>
+          <p class="text-muted fs-5">
+            En <strong>{{ shop.nombre }}</strong> somos apasionados por los videojuegos.
+            Desde nuestros comienzos, nos dedicamos a ofrecer la mejor selección de títulos
+            para todas las plataformas, con los mejores precios y atención personalizada.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="container py-5">
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-3">
+          <div class="feature-card text-center p-4">
+            <h1>🎮</h1>
+            <h5 class="mt-3">Gran variedad</h5>
+            <p class="text-muted">Más de 500 títulos disponibles</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="feature-card text-center p-4">
+            <h1>🚀</h1>
+            <h5 class="mt-3">Envío rápido</h5>
+            <p class="text-muted">Recibí tu juego en 24hs</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="feature-card text-center p-4">
+            <h1>💰</h1>
+            <h5 class="mt-3">Mejores precios</h5>
+            <p class="text-muted">Ofertas y descuentos todos los días</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Info Cards -->
+  <div class="container py-5">
+    <div class="row g-4 justify-content-center">
+
+      <!-- Email -->
+      <div class="col-md-3">
+        <div class="info-card text-center p-4">
+          <div class="icon-wrapper mb-3">
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+          <h5>Email</h5>
+          <p class="text-muted">{{ shop.email }}</p>
+        </div>
+      </div>
+
+      <!-- Teléfono -->
+      <div class="col-md-3">
+        <div class="info-card text-center p-4">
+          <div class="icon-wrapper mb-3">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <h5>Teléfono</h5>
+          <p class="text-muted">{{ shop.telefono }}</p>
+        </div>
+      </div>
+
+      <!-- Dirección -->
+      <div class="col-md-3">
+        <div class="info-card text-center p-4">
+          <div class="icon-wrapper mb-3">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <h5>Dirección</h5>
+          <p class="text-muted">{{ shop.direccion }}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

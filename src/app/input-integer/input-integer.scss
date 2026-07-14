@@ -1,0 +1,39 @@
+
+.quantity-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+
+  button {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  input {
+    width: 45px;
+    height: 28px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 2px 4px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    background-color: #f8f9fa;
+    color: #333;
+
+    &:focus {
+      outline: none;
+      border-color: #e94560;
+      box-shadow: 0 0 0 2px rgba(233, 69, 96, 0.25);
+    }
+  }
+}
