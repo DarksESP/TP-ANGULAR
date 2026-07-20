@@ -1,3 +1,11 @@
+## Datos del estudiante
+
+| Campo | Detalle |
+|---|---|
+| **Nombre y Apellido** | Hernán Luis Valea |
+| **DNI** | 45224524 |
+| **Email** | valea.190455@email.com |
+| **Sede** | Tandil |
 
 # 🎮 GameStore - Tienda de Videojuegos
 
@@ -23,28 +31,7 @@ Permite a los usuarios explorar un catálogo de juegos, seleccionar cantidades y
 - SCSS
 - GitHub
 
-## Datos del estudiante
 
-| Campo | Detalle |
-|---|---|
-| **Nombre y Apellido** | Hernán Luis Valea |
-| **DNI** | 45224524 |
-| **Email** | valea.190455@email.com |
-| **Sede** | Tandil |
-
-
-## Instalación
-
-```bash
-# Clonar el repositorio
-git clone https://github.com/tuusuario/gamestore.git
-
-# Instalar dependencias
-npm install
-
-# Ejecutar el proyecto
-ng serve
-```
 
 ## Estructura del proyecto
 
